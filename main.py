@@ -4,8 +4,7 @@
 from vpython import *
 from time import *
 
-# Making a tube
-tube = cylinder(radius=2)
+scene = canvas(width=1000, height=800, background=color.gray(0.5))
 
 while True:
     pass

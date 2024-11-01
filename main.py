@@ -22,11 +22,11 @@ changeX = 0.1
 xPos = 0
 
 while True:
-    rate(20) # To change the speed of animation
+    rate(30) # To change the speed of animation
 
     xPos = xPos + changeX
 
-    if xPos > 10 or xPos < -10:
+    if xPos+mRadius+wallThickness > 10 or xPos-mRadius-wallThickness < -10:
         changeX *= -1
 
     marble.pos = vector(xPos,0,0)
